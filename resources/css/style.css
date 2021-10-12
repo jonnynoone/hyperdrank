@@ -34,10 +34,50 @@ header {
 }
 
 h1 {
-    margin: 0;
+    margin: 0 0 20px;
     color: #fff;
-    text-shadow: 1px 1px 0px #444,
-                 1px -1px 0px #444,
-                 -1px 1px 0px #444,
-                 -1px -1px 0px #444;
+    font-size: 240%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #444, 1px -1px 0px #444, -1px 1px 0px #444, -1px -1px 0px #444;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: border 0.2s, color 0.2s, background-color 0.2s;
+}
+
+.btn-full {
+    color: #fff;
+    margin-right: 15px;
+    background-color: #8e44ad;
+    border: 1px solid #8e44ad;
+}
+
+.btn-ghost {
+    color: #8e44ad;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #8e44ad;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #34193f;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #34193f;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
+    border: 1px solid #8e44ad;
 }
