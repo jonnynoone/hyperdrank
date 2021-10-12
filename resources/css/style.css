@@ -1,3 +1,6 @@
+/* -------------------------------------- */
+/* BASIC SETUP */
+/* -------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -13,26 +16,15 @@ html {
     background-color: #fff;
 }
 
+/* -------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* -------------------------------------- */
 .row {
     margin: 0 auto;
     max-width: 1140px;
 }
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/xhero10.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+/* ----- HEADINGS ----- */
 h1 {
     margin: 0 0 20px;
     color: #fff;
@@ -44,6 +36,7 @@ h1 {
     text-shadow: 1px 1px 0px #444, 1px -1px 0px #444, -1px 1px 0px #444, -1px -1px 0px #444;
 }
 
+/* ----- BUTTONS ----- */
 .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -80,4 +73,55 @@ h1 {
 .btn-ghost:active {
     color: #fff;
     border: 1px solid #8e44ad;
+}
+
+/* -------------------------------------- */
+/* HEADER */
+/* -------------------------------------- */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/xhero10.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    float: left;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    font-size: 90%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s;
+    padding: 6px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #8e44ad;
 }
