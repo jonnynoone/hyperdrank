@@ -1,3 +1,7 @@
+/* ----- Color Palette ----- */
+/* Purple - #8e44ad */
+/* Dark Purple - ##34193f */
+
 /* -------------------------------------- */
 /* BASIC SETUP */
 /* -------------------------------------- */
@@ -230,4 +234,63 @@ header {
 .drink-photo > img:hover {
     opacity: 1;
     transform: scale(1.01);
+}
+
+/* -------------------------------------- */
+/* HOW IT WORKS */
+/* -------------------------------------- */
+.section-steps {
+    background-color: #f3f3f3;
+}
+
+.steps-box {
+    margin-top: 30px;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step p {
+    line-height: 135%;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 70px;
+}
+
+.works-step div {
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    color: #8e44ad;
+    border: 2px solid #8e44ad;
+    display: inline-block;
+    border-radius: 100%;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
 }
