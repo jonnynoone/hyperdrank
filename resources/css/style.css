@@ -131,17 +131,20 @@ a:active {
 
 /* ----- BUTTONS ----- */
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    border: 1px solid transparent;
     transition: border 0.2s, color 0.2s, background-color 0.2s;
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     color: #fff;
     margin-right: 15px;
     background-color: #8e44ad;
@@ -156,12 +159,14 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover {
     background-color: #34193f;
 }
 
 .btn-full:hover,
 .btn-full:active {
+    background-color: #34193f;
     border: 1px solid #34193f;
 }
 
@@ -358,7 +363,7 @@ header {
 /* -------------------------------------- */
 .section-testimonials {
     color: #fff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -448,4 +453,30 @@ cite img {
 
 .plan-box ul li {
     padding: 5px 0;
+}
+
+/* -------------------------------------- */
+/* FORM */
+/* -------------------------------------- */
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
 }
