@@ -11,13 +11,14 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     color: #555;
     font-size: 20px;
     font-weight: 300;
     font-family: 'Lato', 'Arial', sans-serif;
     text-rendering: optimizeLegibility;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 /* -------------------------------------- */
